@@ -34,3 +34,24 @@ const result1 = add(3, 5);
 const result2 = add(5, 9);
 
 console.log(result1, result2);
+
+function isEvenOrOdd(num) {
+  let result;
+  if (num % 2 === 0) {
+    result = "EVEN";
+  } else {
+    result = "ODD";
+  }
+  return result;
+}
+
+const num = prompt("Please enter a number");
+console.log(`${num} is ${isEvenOrOdd(num)}`);
+
+console.log("FUNC EXPRESSION");
+
+const yazdir = function (message) {
+  console.log(message);
+};
+
+yazdir("Hallo 2023");
