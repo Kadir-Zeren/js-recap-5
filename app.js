@@ -1,57 +1,62 @@
-console.log("FUNC DECLARATION");
+// console.log("FUNC DECLARATION");
 
-function yazdirMerhaba() {
-  console.log("Hello World");
-}
+// function yazdirMerhaba() {
+//   console.log("Hello World");
+// }
 
-yazdirMerhaba();
-yazdirMerhaba();
-yazdirMerhaba();
+// yazdirMerhaba();
+// yazdirMerhaba();
+// yazdirMerhaba();
 
-function yazdirParametre(message, year = "") {
-  console.log(message, year);
-}
-yazdirParametre("Hello", "2024");
-yazdirParametre("Salut", "2025");
-yazdirParametre("Hola", "2026");
-yazdirParametre("Hallo");
+// function yazdirParametre(message, year = "") {
+//   console.log(message, year);
+// }
+// yazdirParametre("Hello", "2024");
+// yazdirParametre("Salut", "2025");
+// yazdirParametre("Hola", "2026");
+// yazdirParametre("Hallo");
 
-function calculate(name, yob) {
-  const age = new Date().getFullYear() - yob;
-  console.log(`${name} is ${age} years old`);
-  return age;
-}
-console.log(new Date());
-console.log(calculate("Ahmet", 1990));
-const ismetAge = calculate("Ismet", 1890);
-console.log("Ismet's Age:", ismetAge);
+// function calculate(name, yob) {
+//   const age = new Date().getFullYear() - yob;
+//   console.log(`${name} is ${age} years old`);
+//   return age;
+// }
+// console.log(new Date());
+// console.log(calculate("Ahmet", 1990));
+// const ismetAge = calculate("Ismet", 1890);
+// console.log("Ismet's Age:", ismetAge);
 
-function add(num1, num2) {
-  return num1 + num2;
-}
+// function add(num1, num2) {
+//   return num1 + num2;
+// }
 
-const result1 = add(3, 5);
-const result2 = add(5, 9);
+// const result1 = add(3, 5);
+// const result2 = add(5, 9);
 
-console.log(result1, result2);
+// console.log(result1, result2);
 
-function isEvenOrOdd(num) {
-  let result;
-  if (num % 2 === 0) {
-    result = "EVEN";
-  } else {
-    result = "ODD";
-  }
-  return result;
-}
+// function isEvenOrOdd(num) {
+//   let result;
+//   if (num % 2 === 0) {
+//     result = "EVEN";
+//   } else {
+//     result = "ODD";
+//   }
+//   return result;
+// }
 
-const num = prompt("Please enter a number");
-console.log(`${num} is ${isEvenOrOdd(num)}`);
+// const num = prompt("Please enter a number");
+// console.log(`${num} is ${isEvenOrOdd(num)}`);
 
 console.log("FUNC EXPRESSION");
 
 const yazdir = function (message) {
   console.log(message);
 };
-
 yazdir("Hallo 2023");
+
+let oddEven = function (number) {
+  return number % 2 === 0 ? "EVEN" : "ODD";
+};
+console.log(oddEven(5));
+console.log(oddEven(2));
